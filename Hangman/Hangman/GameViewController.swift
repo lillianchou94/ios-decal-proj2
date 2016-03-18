@@ -1,43 +1,37 @@
-//
-//  GameViewController.swift
-//  Hangman
-//
-//  Created by Shawn D'Souza on 3/3/16.
-//  Copyright © 2016 Shawn D'Souza. All rights reserved.
-//
-
 import UIKit
 
 class GameViewController: UIViewController {
-    @IBOutlet var correctButton: UIButton!
-    @IBOutlet var incorrectButton: UIButton!
     @IBOutlet var hangPersonView: UIImageView!
     @IBOutlet var guessLabel: UILabel!
     @IBOutlet var incorrectGuessLabel: UILabel!
+    
+    var phraseString: String = ""
     var phrase: [Character] = []
     var guessedLetter: [Character] = []
     var correctlyGuessedLetter: [Character] = []
     var hangpersonState:Int = 1
     var lettersLeft:Int = 0
     var gameState:String = "in progress"
+    var buttonArray: [UIButton] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         let hangmanPhrases = HangmanPhrases()
-        let temp:String = hangmanPhrases.getRandomPhrase()
-        for letter in temp.characters{
+        phraseString = hangmanPhrases.getRandomPhrase()
+        print(phraseString)
+        for letter in phraseString.characters{
             phrase.append(letter)
         }
         loadInterface()
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     //update guessed letters
@@ -47,7 +41,6 @@ class GameViewController: UIViewController {
                 guessedLetter[i] = s
                 correctlyGuessedLetter[i] = s
                 lettersLeft--
-                print(lettersLeft)
             }
         }
         var temp = ""
@@ -65,18 +58,40 @@ class GameViewController: UIViewController {
         incorrectGuessLabel.text = temp
     }
     
-    //update textview
-    func didTapCorrect() {
+
+    @IBAction func guessButtonPressed(sender: UIButton) {
         if gameState == "in progress"{
-            //dummy guess
-            for letter in phrase{
-                if !(guessedLetter.contains(letter)){
-                    print("guessed \(letter)")
-                    updateGuess(letter)
-                    guessedLetter.append(letter)
-                    break
-                }
+            var letter: Character!
+            for c in sender.titleLabel!.text!.characters{
+                letter = c
             }
+            if phrase.contains(letter){
+                didTapCorrect(letter)
+            } else{
+                didTapIncorrect(letter)
+            }
+            sender.hidden = true
+            buttonArray.append(sender)
+        }
+    }
+    
+    @IBAction func didTapReset(){
+        hangPersonView.image = UIImage(named: "hangman1.gif")
+        hangpersonState = 1
+        guessLabel.text = makeGuessLabel()
+        gameState = "in progress"
+        setUpGuessedArray(makeGuessLabel())
+        incorrectGuessLabel.text = "Incorrect guesses: "
+        for button in buttonArray{
+            button.hidden = false
+        }
+    }
+    
+    //update textview
+    func didTapCorrect(letter: Character) {
+        if gameState == "in progress"{
+            updateGuess(letter)
+            guessedLetter.append(letter)
             
         }
         if lettersLeft == 0{
@@ -86,14 +101,12 @@ class GameViewController: UIViewController {
     }
     
     //change hangperson state
-    func didTapIncorrect(){
+    func didTapIncorrect(letter: Character){
         if gameState == "in progress"{
             if hangpersonState < 7{
                 hangpersonState++
-                let dummyWrongGuess = makeWrongGuess()
-                print("guessed this wrong: \(dummyWrongGuess)")
-                updateWrongGuess(dummyWrongGuess)
-                guessedLetter.append(dummyWrongGuess)
+                updateWrongGuess(letter)
+                guessedLetter.append(letter)
             } else{
                 gameState = "lose"
             }
@@ -132,23 +145,29 @@ class GameViewController: UIViewController {
     func checkGameState(){
         switch gameState{
             case "win":
-                hangPersonView.image = UIImage(named: "hangman WIN.gif")
+                displayResult("You WON!")
+                break;
             case "lose":
-                hangPersonView.image = UIImage(named: "hangman LOSE.gif")
+                displayResult("You LOST LOL")
+                break;
             default:
                 break;
         }
-        
+    }
+    
+    func displayResult(msg: String){
+        let alertController = UIAlertController(title: msg, message: nil,preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     func makeGuessLabel() -> String{
+        lettersLeft = 0
         var rtn: String = ""
         for letter in phrase{
             if letter != " "{
                 rtn += "-"
                 lettersLeft++
-                print(letter)
-                print(lettersLeft)
             } else{
                 rtn += " "
             }
@@ -156,24 +175,25 @@ class GameViewController: UIViewController {
         return rtn
     }
     
+    func setUpGuessedArray(myphrase: String){
+        guessedLetter = []
+        correctlyGuessedLetter = []
+        for letter in myphrase.characters{
+            guessedLetter.append(letter)
+            correctlyGuessedLetter.append(letter)
+        }
+    }
+    
     func loadInterface() {
         lettersLeft = 0
         let myphrase = makeGuessLabel();
         guessLabel.text = myphrase
         
-        for letter in myphrase.characters{
-            guessedLetter.append(letter)
-            correctlyGuessedLetter.append(letter)
-        }
-        
-        incorrectGuessLabel.text = "Incorrect guesses: ";
+        setUpGuessedArray(myphrase)
+        incorrectGuessLabel.text = "Incorrect guesses: "
         hangPersonView.image = UIImage(named: "hangman1.gif")
         
-        correctButton.addTarget(self, action: "didTapCorrect", forControlEvents: .TouchUpInside)
-        incorrectButton.addTarget(self, action: "didTapIncorrect", forControlEvents: .TouchUpInside)
-    
     }
-    
     
     /*
     // MARK: - Navigation

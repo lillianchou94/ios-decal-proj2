@@ -28,7 +28,7 @@
                                 <rect key="frame" x="244" y="318" width="113" height="30"/>
                                 <state key="normal" title="Start New Game"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="b6T-qD-cad"/>
+                                    <segue destination="iQ4-j4-WqJ" kind="show" id="b6T-qD-cad"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,25 +64,34 @@
                                         <rect key="frame" x="0.0" y="0.0" width="550" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufh-qp-rYv">
-                                                <rect key="frame" x="0.0" y="0.0" width="53" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Q">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zt8-2X-4AE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbc-es-ium">
-                                                <rect key="frame" x="56" y="0.0" width="52" height="48"/>
+                                                <rect key="frame" x="55.5" y="0.0" width="52" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="W">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kx5-aE-ohl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZG8-FR-Bpn">
-                                                <rect key="frame" x="111" y="0.0" width="53" height="48"/>
+                                                <rect key="frame" x="110.5" y="0.0" width="52.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="E">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nYl-eK-vY2"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJj-OD-DZ6">
                                                 <rect key="frame" x="166" y="0.0" width="52" height="48"/>
@@ -90,20 +99,29 @@
                                                 <state key="normal" title="R">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XyZ-CY-ue6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-oa-kyv">
-                                                <rect key="frame" x="221" y="0.0" width="53" height="48"/>
+                                                <rect key="frame" x="221" y="0.0" width="52.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="T">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Da8-Da-e5d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFa-WG-FY8">
-                                                <rect key="frame" x="277" y="0.0" width="53" height="48"/>
+                                                <rect key="frame" x="276.5" y="0.0" width="52.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Y">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhq-rC-xeS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNi-et-mmW">
                                                 <rect key="frame" x="332" y="0.0" width="52" height="48"/>
@@ -111,27 +129,39 @@
                                                 <state key="normal" title="U">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRX-SD-02d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m3-BT-vJ3">
-                                                <rect key="frame" x="387" y="0.0" width="53" height="48"/>
+                                                <rect key="frame" x="387" y="0.0" width="52.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="I">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u3i-cI-q7F"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qn8-YZ-zRZ">
-                                                <rect key="frame" x="443" y="0.0" width="52" height="48"/>
+                                                <rect key="frame" x="442.5" y="0.0" width="52" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="O">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrd-Fl-JdL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xs-8I-vFf">
-                                                <rect key="frame" x="498" y="0.0" width="53" height="48"/>
+                                                <rect key="frame" x="497.5" y="0.0" width="52.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="P">
                                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9bS-EQ-XTZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -139,32 +169,44 @@
                                         <rect key="frame" x="0.0" y="51" width="550" height="48"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0A-Ej-CYX">
-                                                <rect key="frame" x="0.0" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="A">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKe-qq-Oe3"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-7o-miy">
-                                                <rect key="frame" x="62" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="61.5" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="S">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o08-7d-wIo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euw-fd-exJ">
-                                                <rect key="frame" x="123" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="123" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="D">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6g-Tg-cUi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mg3-JZ-Acn">
-                                                <rect key="frame" x="185" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="184.5" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="F">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X45-a7-s0B"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTw-JG-LW6">
                                                 <rect key="frame" x="246" y="0.0" width="58" height="48"/>
@@ -172,35 +214,50 @@
                                                 <state key="normal" title="G">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qx1-Qc-Bex"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMu-VL-Huu">
-                                                <rect key="frame" x="307" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="307" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="H">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMa-Ki-bWh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCY-9u-XWq">
-                                                <rect key="frame" x="369" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="368.5" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="J">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKQ-Nc-51g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lD-Wv-BYb">
-                                                <rect key="frame" x="430" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="430" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="K">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="God-dJ-cWJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cG-0G-taT">
-                                                <rect key="frame" x="492" y="0.0" width="59" height="48"/>
+                                                <rect key="frame" x="491.5" y="0.0" width="58.5" height="48"/>
                                                 <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="L">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHG-2E-UQy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -213,6 +270,9 @@
                                                 <state key="normal" title="Z">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HcT-L1-yXe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB2-II-pcF">
                                                 <rect key="frame" x="79" y="0.0" width="76" height="48"/>
@@ -220,6 +280,9 @@
                                                 <state key="normal" title="X">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xH-km-y6w"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQ5-qp-awY">
                                                 <rect key="frame" x="158" y="0.0" width="76" height="48"/>
@@ -227,6 +290,9 @@
                                                 <state key="normal" title="C">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmc-HK-JQc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLC-ce-eDD">
                                                 <rect key="frame" x="237" y="0.0" width="76" height="48"/>
@@ -234,6 +300,9 @@
                                                 <state key="normal" title="V">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgH-gc-DwI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-Ll-yu8">
                                                 <rect key="frame" x="316" y="0.0" width="76" height="48"/>
@@ -241,6 +310,9 @@
                                                 <state key="normal" title="B">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dyw-xX-GgR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wca-37-KbQ">
                                                 <rect key="frame" x="395" y="0.0" width="76" height="48"/>
@@ -248,6 +320,9 @@
                                                 <state key="normal" title="N">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXD-IV-7Xo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPg-0v-NYO">
                                                 <rect key="frame" x="474" y="0.0" width="76" height="48"/>
@@ -255,6 +330,9 @@
                                                 <state key="normal" title="M">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="guessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bAm-oc-cMp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -270,61 +348,59 @@
                                     <constraint firstAttribute="width" constant="200" id="rIF-gN-EfR"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph7-2x-zAP">
-                                <rect key="frame" x="258" y="111" width="83" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph7-2x-zAP">
+                                <rect key="frame" x="275.5" y="126.5" width="48" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgP-Iv-Zos">
-                                <rect key="frame" x="338" y="64" width="62" height="30"/>
-                                <state key="normal" title="Incorrect"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect guesses: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPQ-Mb-OIJ">
-                                <rect key="frame" x="210" y="385" width="179" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="216.5" y="385" width="166" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHR-Yb-cbl">
-                                <rect key="frame" x="200" y="64" width="52" height="30"/>
-                                <state key="normal" title="Correct"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tap a letter to guess!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pna-Zq-fMY">
+                                <rect key="frame" x="204" y="78.5" width="191" height="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ono-pv-8Dj">
+                                <rect key="frame" x="526" y="400" width="49" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapReset" destination="BYZ-38-t0r" eventType="touchUpInside" id="svD-6f-oyL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="17c-DZ-oCo"/>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1vc-9w-zAB"/>
-                            <constraint firstItem="HUi-zO-noN" firstAttribute="top" secondItem="bgP-Iv-Zos" secondAttribute="bottom" constant="70" id="5NO-Vi-GoI"/>
-                            <constraint firstItem="ph7-2x-zAP" firstAttribute="leading" secondItem="PHR-Yb-cbl" secondAttribute="trailing" constant="6.5" id="6JB-d0-dvo"/>
-                            <constraint firstItem="HUi-zO-noN" firstAttribute="top" secondItem="PHR-Yb-cbl" secondAttribute="bottom" constant="70" id="7o7-IW-qQP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUK-3Y-lvB" secondAttribute="bottom" constant="5" id="9Co-h4-kCZ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FUK-3Y-lvB" secondAttribute="bottom" constant="5" id="Aok-SD-9QE"/>
                             <constraint firstItem="CPQ-Mb-OIJ" firstAttribute="top" secondItem="HUi-zO-noN" secondAttribute="bottom" constant="21" id="B9R-b2-h8n"/>
+                            <constraint firstItem="pna-Zq-fMY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fsf-qy-tu1"/>
                             <constraint firstItem="CPQ-Mb-OIJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GH7-Xj-BgP"/>
-                            <constraint firstItem="bgP-Iv-Zos" firstAttribute="leading" secondItem="ph7-2x-zAP" secondAttribute="trailing" constant="4.5" id="IOv-Qb-fOo"/>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LG5-ml-3nh"/>
                             <constraint firstItem="ph7-2x-zAP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lmo-fv-r97"/>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="top" secondItem="HUi-zO-noN" secondAttribute="bottom" constant="81" id="QRd-LP-tll"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bgP-Iv-Zos" secondAttribute="trailing" constant="172" id="RI5-kd-PqG"/>
+                            <constraint firstItem="ono-pv-8Dj" firstAttribute="trailing" secondItem="FUK-3Y-lvB" secondAttribute="trailing" id="RUE-6a-vrZ"/>
                             <constraint firstItem="HUi-zO-noN" firstAttribute="top" secondItem="ph7-2x-zAP" secondAttribute="bottom" constant="17" id="SIF-F3-3tr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FUK-3Y-lvB" secondAttribute="trailing" constant="5" id="Sbj-2E-TTV"/>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SpZ-CZ-cq6"/>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Tn7-Jy-p6n"/>
-                            <constraint firstItem="bgP-Iv-Zos" firstAttribute="leading" secondItem="PHR-Yb-cbl" secondAttribute="trailing" constant="97" id="Tz7-wB-CRp"/>
-                            <constraint firstItem="PHR-Yb-cbl" firstAttribute="leading" secondItem="HUi-zO-noN" secondAttribute="leading" id="VmE-TV-xdJ"/>
-                            <constraint firstItem="PHR-Yb-cbl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="177" id="XjM-4x-3gR"/>
+                            <constraint firstItem="ph7-2x-zAP" firstAttribute="top" secondItem="pna-Zq-fMY" secondAttribute="bottom" constant="24" id="cze-Uc-9Me"/>
+                            <constraint firstItem="FUK-3Y-lvB" firstAttribute="top" secondItem="ono-pv-8Dj" secondAttribute="bottom" constant="15" id="fij-Pn-5fd"/>
                             <constraint firstItem="FUK-3Y-lvB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lom-dC-6uk"/>
                             <constraint firstItem="HUi-zO-noN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tr2-9J-cjO"/>
-                            <constraint firstItem="bgP-Iv-Zos" firstAttribute="trailing" secondItem="HUi-zO-noN" secondAttribute="trailing" id="xc2-uX-hs0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="XjM-4x-3gR"/>
-                                <exclude reference="6JB-d0-dvo"/>
-                                <exclude reference="IOv-Qb-fOo"/>
-                                <exclude reference="RI5-kd-PqG"/>
-                                <exclude reference="Tz7-wB-CRp"/>
                                 <exclude reference="17c-DZ-oCo"/>
                                 <exclude reference="LG5-ml-3nh"/>
                                 <exclude reference="SpZ-CZ-cq6"/>
@@ -333,15 +409,46 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="Wvq-z7-RJs">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Kjl-XU-MBY">
+                            <connections>
+                                <segue destination="19U-XA-G9y" kind="show" id="HtS-u2-uRo"/>
+                            </connections>
+                        </barButtonItem>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="The HangPerson Game" textAlignment="center" minimumFontSize="17" id="LbM-Kf-Z4U">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </navigationItem>
                     <connections>
-                        <outlet property="correctButton" destination="PHR-Yb-cbl" id="qdD-pQ-tEx"/>
                         <outlet property="guessLabel" destination="ph7-2x-zAP" id="Ff4-NP-KKj"/>
                         <outlet property="hangPersonView" destination="HUi-zO-noN" id="sr1-S0-OuF"/>
-                        <outlet property="incorrectButton" destination="bgP-Iv-Zos" id="xQT-KU-0EF"/>
                         <outlet property="incorrectGuessLabel" destination="CPQ-Mb-OIJ" id="Kl4-hs-jZi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N9v-WA-YeT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5HW-Bo-xdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQ4-j4-WqJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="al6-i4-j1o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fqY-rj-bec"/>
+                    </connections>
+                </navigationController>
             </objects>
             <point key="canvasLocation" x="421" y="263"/>
         </scene>
